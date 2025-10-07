@@ -1,6 +1,6 @@
 # TheAntsProject
 
-![here](./ants.jpeg)
+![coucou](./theme/ants.jpeg)
 
 ## Evolutionary algorithms
 
@@ -29,6 +29,6 @@ There exists multiple stages:
 
 ## Pheromone updates
 
-![probs](./probs.png)
+![coucou](./theme/Pheromones.jpeg)
 
 ![here](./Pheromones.png)
