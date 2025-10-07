@@ -28,7 +28,3 @@ There exists multiple stages:
 4. More ants return via the shorter path and subsequently the pheromone concentrations also increase. The more ants that follow a trail, the stronger the pheromone trail becomes. Moreover, due to evaporation, the pheromone concentration in the longer path reduces, decreasing the probability of selection of this path in further stages. Therefore, the whole colony gradually uses the shorter path in higher probabilities. So, path optimization is attained.
 
 ## Pheromone updates
-
-![coucou](./theme/Pheromones.jpeg)
-
-![here](./Pheromones.png)
