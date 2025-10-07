@@ -1,3 +1,8 @@
+import sys
+
+start_node=sys.argv[1]
+end_node=sys.argv[2]
+
 distances = {
     "A": {"B": {"distance": 0.5, "pheromone": 0},
           "C": {"distance": 0.5, "pheromone": 0}},
@@ -7,8 +12,6 @@ distances = {
 
 pheromone_trail = 0.5
 evaporation_rate = 0.1
-
-
 
 def evaporation(pheromone):
     return pheromone * (1 - evaporation_rate)
@@ -25,7 +28,7 @@ def ant_strategy(current_node, graph, visited):
         if distance_to_neighbor < shortest_distance:
             shortest_distance = distance_to_neighbor
             closest_neighbor = neighbor
-            graph[current_node][closest_neighbor]["pheromone"] += pheromone_trail
+    graph[current_node][closest_neighbor]["pheromone"] += pheromone_trail
     return closest_neighbor
 
 
@@ -36,6 +39,9 @@ def process_search_path(start_node, end_node, graph):
 
     for i in range(100):
         next_node = ant_strategy(current_node, graph, visited)
+        if not next_node:  # ✅ si aucun voisin dispo
+            print("Aucun chemin trouvé !")
+            break
         current_node = next_node
         path.append(current_node)
         visited.add(current_node)
@@ -46,4 +52,4 @@ def process_search_path(start_node, end_node, graph):
     
     return "Aucun chemin trouvé."
 
-print(process_search_path("B", "C", distances))
+print(process_search_path(start_node, end_node, distances))
