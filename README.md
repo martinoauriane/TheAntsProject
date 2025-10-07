@@ -25,7 +25,7 @@ There exists multiple stages:
 1. All ants are in their nest. There is no pheromone content in the environment.
 2. Ants begin their search with equal (0.5 each) probability along each path. Initially, ants wander randomly. Some will happen to take shorter paths, and some will take longer paths.
 3. The ants through the shorter path reaches food source earlier. The ants that take a shorter path will complete the round trip (nest -> food -> nest) faster. This means they will make more trips in the same amount of time, reinforcing theyr shorter path with pheromone. Due to pheromone trail along the shorter path already available, probability of selection is higher. When an ant comes to a fork in the road, it is more likely to choose the path that has a stronger pheromone scent.
-4. More ants return via the shorter path and subsequently the pheromone concentrations also increase. Moreover, due to evaporation, the pheromone concentration in the longer path reduces, decreasing the probability of selection of this path in further stages. Therefore, the whole colony gradually uses the shorter path in higher probabilities. So, path optimization is attained.
+4. More ants return via the shorter path and subsequently the pheromone concentrations also increase. The more ants that follow a trail, the stronger the pheromone trail becomes. Moreover, due to evaporation, the pheromone concentration in the longer path reduces, decreasing the probability of selection of this path in further stages. Therefore, the whole colony gradually uses the shorter path in higher probabilities. So, path optimization is attained.
 
 ## Pheromone updates
 
