@@ -27,4 +27,6 @@ There exists multiple stages:
 3. The ants through the shorter path reaches food source earlier. The ants that take a shorter path will complete the round trip (nest -> food -> nest) faster. This means they will make more trips in the same amount of time, reinforcing theyr shorter path with pheromone. Due to pheromone trail along the shorter path already available, probability of selection is higher. When an ant comes to a fork in the road, it is more likely to choose the path that has a stronger pheromone scent.
 4. More ants return via the shorter path and subsequently the pheromone concentrations also increase. The more ants that follow a trail, the stronger the pheromone trail becomes. Moreover, due to evaporation, the pheromone concentration in the longer path reduces, decreasing the probability of selection of this path in further stages. Therefore, the whole colony gradually uses the shorter path in higher probabilities. So, path optimization is attained.
 
-## Pheromone updates
+## Dijkstra algorithm
+
+In computer science, we translate this principle to solve optimization problemes: search for the best route, the best transport plan, etc. In Dijkstra's Algorithm, the goal is to find the shortest distance from a given source node to all other nodes in the graph.
