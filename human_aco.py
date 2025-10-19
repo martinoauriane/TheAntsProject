@@ -50,6 +50,6 @@ def process_search_path(start_node, end_node, graph):
             print("End node found. Shortest path is:")
             return " - ".join(path)
     
-    return "Aucun chemin trouvé."
+    return "No found path."
 
 print(process_search_path(start_node, end_node, distances))
