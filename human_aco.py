@@ -39,7 +39,7 @@ def process_search_path(start_node, end_node, graph):
 
     for i in range(100):
         next_node = ant_strategy(current_node, graph, visited)
-        if not next_node:  # ✅ si aucun voisin dispo
+        if not next_node:  
             print("Aucun chemin trouvé !")
             break
         current_node = next_node
